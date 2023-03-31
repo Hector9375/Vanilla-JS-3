@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+</head>
+<body onload="initialize()">
+    <div style="display:flex;align-items:center;justify-content:center;">
+        <input type="text" id="work"/><button onclick="add()">추가</button>
+    </div>
+    <div style="display:flex; justify-content: space-evenly;">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h1>할일</h1>
+            <ol>
+            </ol>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h1>한일</h1>
+            <ol>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    1. 함수를 정의해야함 add(), check(elem)
+    2. add 함수
+        2-1. 인풋(input)내용을 가져옴
+        2-2. 할일목록에 추가할 Element를 생성함
+        2-3. check함수도 할당함
+        2-4. 생성한 Element를 할일목록 추가
+    3. check 함수
+        3-1. 체크 여부를 판단함
+        3-2. 만약 체크가 되어있다면? 한일 목록에서 삭제 후 할일 목록으로 이동
+        3-3. 만약 체크가 되어있지않다면? 할일 목록에서 삭제후 한일 목록으로 이동
+ -->

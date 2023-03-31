@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="./script.js"></script>
+    <style>
+        .board {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .board-header>div {
+            width: 25%;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+
+        .board-header {
+            width: 100%;
+            display: flex;
+        }
+
+        .pagination {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pagination>span {
+            margin: 0 10px;
+        }
+
+        .write-btn {
+            margin: 20px;
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: skyblue;
+            width: 100px;
+            text-align: center;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        .board-line {
+            display: flex;
+        }
+
+        .board-line>div{
+            width: 25%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="initialize()">
+    <div class="container">
+        <div class="wrapper">
+            <div class="board">
+                <div class="borad-form">
+                    <span>글번호</span><input id="post-number" type="number">
+                    <span>글제목</span><input id="post-name"  type="text">
+                    <span>작성자</span><input id="post-writer"  type="text">
+                    <span>작성일</span><input id="post-date"  type="date">
+                    <span>내용</span><input id="post-content" type="text">
+                    <span>비밀번호</span><input id="post-password"    type="password">
+                    
+                </div>
+                <div class="board-header">
+                    <div type="button"  onclick="add()">업로드</div>
+                    <div>글번호</div>
+                    <div>글제목</div>
+                    <div>작성자</div>
+                    <div>작성일</div>
+                </div>
+                <div class="board-list">
+                    
+                </div>
+                <div class="pagination">
+                    <span>처음으로</span><span>이전</span><span>1</span><span>다음</span><span>마지막</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

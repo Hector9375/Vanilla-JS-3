@@ -1,0 +1,31 @@
+body{
+    background-color: bisque;
+}
+#addPost {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    
+    
+}
+
+input{
+    width: 80%;
+    text-align: center;
+    border: 0;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    font-size: large;
+}
+
+#todo-list {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    
+}
